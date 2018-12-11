@@ -16,7 +16,7 @@ $ jest --notifiy --config=config.json
 ```
 
 # Python
-## Run test via command line
+## Run test via command line - unittest
 
 ```
 (specific file)
@@ -27,6 +27,21 @@ $ python -m unittest test_file.test-class
 
 (all files, test files needs to be test_*.py)
 $ python -m unittest discover
+```
+
+## Run test via command line - pytest
+
+```
+$ python3 -m pytest
+============================================================================================ test session starts =============================================================================================
+platform linux -- Python 3.5.2, pytest-4.0.1, py-1.7.0, pluggy-0.8.0
+plugins: cov-2.6.0
+collected 28 items
+
+test_calculator.py .....................                                                                                                                                                               [ 75%]
+test_samples.py .......                                                                                                                                                                                [100%]
+
+========================================================================================= 28 passed in 0.05 seconds ==========================================================================================
 ```
 
 ## Run test on PyCharm
