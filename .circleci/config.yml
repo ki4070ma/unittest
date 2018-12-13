@@ -5,7 +5,10 @@ jobs:
       - image: circleci/python:3.6.4 # the primary container, where your job's commands are run
     steps:
       - checkout # check out the code in the project directory
+      - run: cd python
       - run: echo "hello world" # run the `echo` command
 #      - run: sudo pip --proxy XXXX install pytest pytest-cov
       - run: sudo pip install pytest pytest-cov
       - run: python3 -m pytest -v --cov=. --cov-report=term-missing --cov-report=html
+      - store_test_results:
+          path: python/htmlcov
