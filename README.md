@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/ki4070ma/unittest.svg?style=svg)](https://circleci.com/gh/ki4070ma/unittest)
+
 # Javascript
 ## Installation
 ```
