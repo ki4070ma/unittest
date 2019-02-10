@@ -1,4 +1,4 @@
-#!/usr/bin/python3t
+#!/usr/bin/python3
 
 import pytest
 from calculator import Calculator
